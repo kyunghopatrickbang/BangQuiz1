@@ -1,42 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/zigzag">
+
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/cs01"/>
+        android:src="@drawable/cs01"
+        android:id="@+id/imageView" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="110dp"
+        android:id="@+id/btnNextHome"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="25dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginStart="25dp"
-        android:text="HOME" />
+        android:onClick="nextActivity1"
+        android:text="HOME"
+        android:layout_below="@+id/imageView"
+        android:layout_toLeftOf="@+id/btnNextIS"
+        android:layout_toStartOf="@+id/btnNextIS"
+        android:layout_marginRight="34dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginTop="39dp" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="110dp"
+        android:id="@+id/btnNextIS"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:text="IT PROGRAM"
-        android:layout_alignBaseline="@+id/button"
-        android:layout_alignBottom="@+id/button"
+        android:onClick="nextActivity2"
+        android:text="B.S. IS"
+        android:layout_alignBaseline="@+id/btnNextHome"
+        android:layout_alignBottom="@+id/btnNextHome"
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="110dp"
+        android:id="@+id/btnNextIT"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button2"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="23dp"
-        android:layout_marginRight="23dp"
-        android:text="IS PROGRAM" />
+        android:onClick="nextActivity3"
+        android:text="B.S. IT"
+        android:layout_alignBaseline="@+id/btnNextIS"
+        android:layout_alignBottom="@+id/btnNextIS"
+        android:layout_toRightOf="@+id/btnNextIS"
+        android:layout_toEndOf="@+id/btnNextIS"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp" />
 </RelativeLayout>

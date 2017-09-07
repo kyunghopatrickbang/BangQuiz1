@@ -1,42 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/zigzag">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/it03"/>
+        android:src="@drawable/it03"
+        android:id="@+id/imageView" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="110dp"
+        android:id="@+id/btnNextHome"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="17dp"
-        android:layout_marginLeft="13dp"
-        android:layout_marginStart="13dp"
+        android:onClick="nextActivity1"
         android:text="HOME"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@+id/imageView"
+        android:layout_toLeftOf="@+id/btnNextCS"
+        android:layout_toStartOf="@+id/btnNextCS" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="120dp"
+        android:id="@+id/btnNextCS"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:text="CS PROGRAM"
-        android:layout_alignBaseline="@+id/button"
-        android:layout_alignBottom="@+id/button"
+        android:onClick="nextActivity2"
+        android:text="B.S. CS"
+        android:layout_below="@+id/imageView"
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="110dp"
+        android:id="@+id/btnNextIS"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:text="IS PROGRAM"
-        android:layout_alignTop="@+id/button2"
+        android:onClick="nextActivity3"
+        android:text="B.S. IS"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_below="@+id/imageView"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="16dp"
-        android:layout_marginEnd="16dp" />
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

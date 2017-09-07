@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class ActivityMainScreen extends AppCompatActivity implements View.OnClickListener{
+public class ActivityMainScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,15 +14,22 @@ public class ActivityMainScreen extends AppCompatActivity implements View.OnClic
         setContentView(R.layout.activity_main_screen);
     }
 
-    public void nextActivity(View view)
+    public void nextActivity1(View view)
     {
         Intent intent = new Intent(this, CSScreen.class);
         startActivity(intent);
     }
 
-
-    @Override
-    public void onClick(View view) {
-
+    public void nextActivity2(View view)
+    {
+        Intent intent = new Intent(this, ITScreen.class);
+        startActivity(intent);
     }
+
+    public void nextActivity3(View view)
+    {
+        Intent intent = new Intent(this, ISScreen.class);
+        startActivity(intent);
+    }
+
 }
