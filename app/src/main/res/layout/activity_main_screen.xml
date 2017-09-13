@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:text="B.S. COMPUTER SCIENCE"
         android:onClick="nextActivity1"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="105dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
